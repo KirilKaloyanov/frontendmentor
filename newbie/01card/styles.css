@@ -1,0 +1,48 @@
+.card {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        max-width: 343px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        max-width: 600px;
+        flex-direction: row;
+    }
+}
+
+.header-img {
+    background-color: red;
+    background-image: url(/newbie/01card/images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 240px;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .header-img {
+        background-image: url(/newbie/01card/images/image-product-desktop.jpg);
+        background-position: right;
+    }
+}
+
+.card-body {
+    background-color: aqua;
+}
+
+@media screen and (min-width: 600px) {
+    .card-body{
+        background-color: beige;
+
+    }
+}
