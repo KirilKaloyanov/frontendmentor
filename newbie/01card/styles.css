@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
 body {
     margin: 0;
-    /* box-sizing: border-box; */
+    background-color: beige;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: hsl(228, 12%, 48%);
 }
 
 .card {
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -42,11 +48,11 @@ body {
 }
 
 .card-body {
-    background-color: beige;
+    background-color: white;
 }
 
 .card-body > div {
-    padding: 0 30px;
+    padding: 10px 30px 30px 30px ;
 }
 
 @media screen and (min-width: 600px) {
@@ -62,9 +68,46 @@ button {
     border: 0;
     border-radius: 10px;
     background-color: hsl(158, 36%, 37%);
-
+    color: white;
+    margin-top: 5px;
 }
 
 button:hover {
     background-color: hsl(157, 34%, 24%);
+    cursor: pointer;
+}
+
+.sup-heading {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h1, .promo-price {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+}
+
+h1 {
+    color: black;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.promo-price {
+    color: hsl(158, 36%, 37%);
+}
+
+.original-price {
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+.description {
+    margin: 26px 0;
+
 }
